@@ -184,7 +184,16 @@ git：
 	git remote add origin https://github.com/lxl-3111581715/-Java-.git
 4 推送
 	git push orign master
-5 	
+	git push orign master
+5 clone操作
+	git clone git地址
+	1 完成的把远程库下载到本地
+	2 创建远程地址别名
+	3 初始化本地库
+	4 修改后提交
+		1 克隆项目者要加入团队
+		2 
+6 	
 ```
 
 
