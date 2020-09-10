@@ -216,6 +216,23 @@ git：
 ```
 1 gitFlow工作流
 
-2 
+2 分支实战
+
+```
+
+
+
+18 IDE上使用git
+
+```
+IDEA
+
+eclipes
+
+vscode
+
+webstorm
+
+
 ```
 
