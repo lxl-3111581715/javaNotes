@@ -1,32 +1,123 @@
 <!DOCTYPE html>
+<!-- 主根元素 -->
 <html lang="en">
+<!-- 文档元数据 -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <base href="">
     <title>Document</title>
-</head>
-<body>
-<!-- 
-    图片标签 
-        1 用于向当前的页面引入一个外部的图片
-        2 使用  img 标签
-        3 自结束标签
-        4 src:
-        5 alt: 对图片的描述  1 在图片没有显示的时候出来 2 搜索引擎根据这个来搜索图片
-        6 属于替换元素 介于块和行之间
-            具有俩种元素的特点
-        7 width: px  
-        8 heigth: px
-        9 宽度和高度只修改了一个  另一个会等比例缩放
-        10 注意： 在pc端  不建议修改图片的大小
-        11 图片的格式
-            jpg jpeg： 颜色丰富 不支持透明效果 不支持动图  显示照片
-            gif ：支持的颜色少  鸡翅简单透明 支持动图 表示颜色单一的图片 动图
-            png ： 支持颜色丰富 支持复杂功能 复杂透明图片
-            webp ： 
--->
+    <style>
+        .forecast {
+            margin: 0;
+            padding: .3rem;
+            background-color: #eee;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
 
-<img src="" alt="">
+        .forecast>h1,
+        .day-forecast {
+            margin: .5rem;
+            padding: .3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+        }
+
+        .day-forecast>h2,
+        .day-forecast>p {
+            margin: .2rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<!-- body  分区根元素 -->
+
+<body>
+    <!-- 内容分区
+    内容分区元素允许你将文档内容从逻辑上进行组织划分。
+    使用包括页眉(header)、页脚(footer)、导航(nav)和标题(h1~h6)等分区元素，
+    来为页面内容创建明确的大纲，以便区分各个章节的内容。
+ -->
+    <abbr title="我是详细描述">描述 我是abbr标签 我用于显示缩写</abbr>
+    <a href="#">我是超链接 </a>
+    <b>我是b标签 我用于将字体加错</b>
+    <code>public class static void main(){11}</code>
+    <map name="primary">
+        <area shape="circle" coords="200,250,25" href="another.htm" />
+        <area shape="default" nohref />
+    </map>
+    <audio controls>
+        <source src="myAudio.mp3" type="audio/mpeg">
+        <source src="myAudio.ogg" type="audio/ogg">
+        <p>Your browser doesn't support HTML5 audio. Here is
+            a <a href="myAudio.mp4">link to the audio</a> instead.</p>
+    </audio>
+    <address>
+        <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+        <a href="tel:+13115552368">(311) 555-2368</a>
+    </address>
+
+    <address>
+        You can contact author at <a href="http://www.somedomain.com/contact">
+            www.somedomain.com</a>.<br>
+        If you see any bugs, please <a href="mailto:webmaster@somedomain.com">
+            contact webmaster</a>.<br>
+        You may also want to visit us:<br>
+        Mozilla Foundation<br>
+        331 E Evelyn Ave<br>
+        Mountain View, CA 94041<br>
+        USA
+    </address>
+
+    <article class="forecast">
+        <h1>Weather forecast for Seattle</h1>
+        <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>04 March 2018</h2>
+            <p>Periods of rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>05 March 2018</h2>
+            <p>Heavy rain.</p>
+        </article>
+    </article>
+
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+
+    <form>
+        <fieldset>
+          <legend>Choose your favorite monster</legend>
+      
+          <input type="radio" id="kraken" name="monster">
+          <label for="kraken">Kraken</label><br/>
+      
+          <input type="radio" id="sasquatch" name="monster">
+          <label for="sasquatch">Sasquatch</label><br/>
+      
+          <input type="radio" id="mothman" name="monster">
+          <label for="mothman">Mothman</label>
+        </fieldset>
+      </form>
+
+
 </body>
+
 </html>
