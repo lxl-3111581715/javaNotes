@@ -69,8 +69,6 @@
 3 转换为 booleanTrue:--->1False:-->0 number(boolean值)4 null --> 转数字 --> 05 undefined--> 转数字 ---> nan |
 ```
 
-
-
 ## 02
 
 ```
